@@ -1,0 +1,97 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/white-cloud-blue-sky_1203-9362.jpg?t=st=1719300582~exp=1719304182~hmac=92079e22e8284e0b027ce746203b75bc435f320c3c3c4d05025ab2ed507c4e6f&w=900");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    color:black;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+}
+#main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    display:none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.cityname{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.humidity{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.description{
+    font-style: italic;
+    font-weight:bold;
+}
+.temp{
+    font-weight: bolder;
+}
+.emj{
+    font-size:25px;
+}
+input[type="text"]
+{
+    width:200px;
+    height:35px;
+    font-size: larger;
+    font-weight: bolder;
+}
+button{
+    padding:9px;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius:27px;;
+    background-color:skyblue ;
+    border:none;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(48, 181, 234);
+}
+@media (max-width:385px) {
+    input[type="text"]
+    {
+        width:130px;
+        font-size: medium;
+        font-weight: bold;
+    }
+    button{
+        padding:7px 5px;
+        font-size:medium;
+    }
+    h2,p,i{
+        font-weight:bolder ;
+        font-size:large;
+    }   
+}
+@media (max-width:265px) {
+    #cont{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        gap:10px;
+    }
+    input[type="text"]
+    {
+        width:150px;
+    }
+    button
+    {
+        padding:9px;
+    }
+    
+}
